@@ -514,6 +514,12 @@ SERIALIZABLE_MAPPING: dict[tuple[str, ...], tuple[str, ...]] = {
         "history",
         "RunnableWithMessageHistory",
     ),
+    ("langchain", "schema", "runnable", "RunnableWithPrefixPreservedHistory"): (
+        "langchain_core",
+        "runnables",
+        "prefix",
+        "RunnableWithPrefixPreservedHistory",
+    ),
     ("langchain", "schema", "runnable", "RunnableAssign"): (
         "langchain_core",
         "runnables",

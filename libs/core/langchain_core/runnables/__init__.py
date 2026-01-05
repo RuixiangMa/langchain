@@ -48,6 +48,7 @@ if TYPE_CHECKING:
         RunnablePassthrough,
         RunnablePick,
     )
+    from langchain_core.runnables.prefix import RunnableWithPrefixPreservedHistory
     from langchain_core.runnables.router import RouterInput, RouterRunnable
     from langchain_core.runnables.utils import (
         AddableDict,
@@ -82,6 +83,7 @@ __all__ = (
     "RunnableSerializable",
     "RunnableWithFallbacks",
     "RunnableWithMessageHistory",
+    "RunnableWithPrefixPreservedHistory",
     "aadd",
     "add",
     "chain",
@@ -109,6 +111,7 @@ _dynamic_imports = {
     "run_in_executor": "config",
     "RunnableWithFallbacks": "fallbacks",
     "RunnableWithMessageHistory": "history",
+    "RunnableWithPrefixPreservedHistory": "prefix",
     "RunnableAssign": "passthrough",
     "RunnablePassthrough": "passthrough",
     "RunnablePick": "passthrough",
