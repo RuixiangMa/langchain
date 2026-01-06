@@ -18,3 +18,8 @@ __version__ = VERSION
 
 surface_langchain_deprecation_warnings()
 surface_langchain_beta_warnings()
+
+# KV Cache normalization components
+from langchain_core.canonical_cache import CanonicalPromptCache
+from langchain_core.prompt_normalization import PromptNormalizer
+from langchain_core.normalized_chat_history import NormalizedChatHistory
